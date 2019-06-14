@@ -1,0 +1,36 @@
+﻿<Window x:Class="ExamWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <TextBox Name="textBox" HorizontalAlignment="Left" Height="23" Margin="155,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285"/>
+        <Label Content="Введите число:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="465,6,0,0" VerticalAlignment="Top" Width="75" Click="StartThreads"/>
+        <TextBox Name ="link" HorizontalAlignment="Left" Height="23" Margin="155,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="285"/>
+        <Label Content="Введите ссылку:" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button Content="Download" HorizontalAlignment="Left" Margin="465,55,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.5,0.5" Click="DownloadLink">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.242"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+
+    </Grid>
+</Window>
